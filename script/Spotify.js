@@ -6,7 +6,7 @@ module.exports.config = {
     version: "1.0.0",
     role: 0,
     hasPermision: 0,
-    credits: "cliff",//api by kim
+    credits: "Jay",//api by kim
     description: "Search and play music from Spotify",
     commandCategory: "spotify",
     hasPrefix: false,
@@ -49,5 +49,4 @@ module.exports.run = async function ({ api, event, args }) {
     } catch (error) {
         console.error(error);
         api.sendMessage("🚧 | An error occurred while processing your request.", event.threadID);
-    }
-};
+                                                                                                          }
