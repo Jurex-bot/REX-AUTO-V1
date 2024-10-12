@@ -6,7 +6,7 @@ module.exports.config = {
   aliases: ['info'],
   description: "Beginner's guide",
   usage: "Help [page] or [command]",
-  credits: 'Develeoper',
+  credits: 'Jurex Aso',
 };
 module.exports.run = async function({
   api,
@@ -71,7 +71,7 @@ module.exports.run = async function({
         const creditsMessage = credits ? `➛ Credits: ${credits}\n` : '';
         const versionMessage = version ? `➛ Version: ${version}\n` : '';
         const cooldownMessage = cooldown ? `➛ Cooldown: ${cooldown} second(s)\n` : '';
-        const message = ` 「 Command 」\n\n➛ Name: ${name}\n${versionMessage}${roleMessage}\n${aliasesMessage}${descriptionMessage}${usageMessage}${creditsMessage}${cooldownMessage}`;
+        const message = ` 「 Command Dev: Jurex Aso 」\n\n➛ Name: ${name}\n${versionMessage}${roleMessage}\n${aliasesMessage}${descriptionMessage}${usageMessage}${creditsMessage}${cooldownMessage}`;
         api.sendMessage(message, event.threadID, event.messageID);
       } else {
         api.sendMessage('Command not found.', event.threadID, event.messageID);
